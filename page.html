@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Calculator</title> 
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>  
+
+    <div class="container">
+            
+                <p>
+                    <input id="value_item" type="text" class="form-control" style="width:153px;height:38px" disabled="true" />
+                </p>
+            
+                <p>
+                        <button class="btn btn-secondary"  style="width:34.63px;height:38px" onclick="inputValbtn(1)">1</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(2)">2</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(3)">3</button>
+                        <button class="btn btn-success" style="width:34.63px;height:38px" onclick="handleOperation('+')">+</button>
+                </p>
+
+                <p>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(4)">4</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(5)">5</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(6)">6</button>
+                        <button class="btn btn-success" style="width:34.63px;height:38px" onclick="handleOperation('-')">-</button>
+                </p>
+
+                <p>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(7)">7</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(8)">8</button>
+                        <button class="btn btn-secondary" style="width:34.63px;height:38px" onclick="inputValbtn(9)">9</button>
+                        <button class="btn btn-success" style="width:34.63px;height:38px" onclick="handleOperation('*')">*</button>
+                </p>
+
+                <p>
+                        <button class="btn btn-secondary" onclick="inputValbtn(0)">0</button>
+                        <button class="btn btn-warning" style="width:34.63px;height:38px" onclick="clrInp()">C</button>
+                        <button id="btn" class="btn btn-primary" style="width:34.63px;height:38px" onclick="getCount()">=</button>
+                        <button class="btn btn-success" style="width:34.63px;height:38px" onclick="handleOperation('/')">/</button>
+                </p>
+
+                
+                
+                
+    </div>   
+                
+</body>
+</html>
